@@ -2,15 +2,31 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+  text-align: start;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#recharts7-clip {
+  position: absolute;
+  align-content: flex-start;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.recharts-layer recharts-bar-rectangle {
+  fill: #86BBD8;
+}
+
+.recharts-wrapper {
+  margin-top: 40px;
+  margin-right: 5px;
+}
+
+#home {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
 }
 
 .App-header {
@@ -22,17 +38,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
