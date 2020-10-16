@@ -4,7 +4,7 @@ const Sequelize = require('sequelize')
 const api = require("./server/routes/api");
 
 const app = express();
-const sequelize = new Sequelize('mysql://root:@localhost/crm_db')
+const sequelize = new Sequelize(process.env.CLEARDB_DATABASE_URL || 'mysql://root:@localhost/crm_db')
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
@@ -18,4 +18,4 @@ app.use(bodyParser.json());
 app.use("/", api);
 
 const PORT = 8080;
-app.listen(PORT, () => console.log(`Running server on port ${PORT}`));
+app.listen(process.env.PORT || PORT, () => console.log(`Running server on port ${PORT}`));

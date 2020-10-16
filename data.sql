@@ -145,9 +145,9 @@ USE cmd_db;
 --     ORDER BY Sales DESC 
 --     LIMIT 3
 
-SELECT COUNT(month(firstContact)) AS value , MONTHNAME(firstContact) as name 
-from clients
-GROUP by month(firstContact)
+-- SELECT COUNT(month(firstContact)) AS value , MONTHNAME(firstContact) as name 
+-- from clients
+-- GROUP by month(firstContact)
 
 
 
