@@ -97,9 +97,7 @@ export class ClientsStore {
   @action updateClient = async client => {
     const clientToUpdate = this.clients.find(c => c.c_id === client.c_id);
     await this.checkCuontry(client.country);
-    console.log(clientToUpdate.sold)
-    console.log(clientToUpdate)
-    const result = await axios.put(`http://localhost:8080/client/${clientToUpdate.c_id}`, clientToUpdate);
+    await axios.put(`http://localhost:8080/client/${clientToUpdate.c_id}`, clientToUpdate);
     this.getClientsFromDB();
   };
 

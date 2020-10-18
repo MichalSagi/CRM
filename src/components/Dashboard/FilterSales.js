@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
 import { observer, inject } from "mobx-react";
 import "antd/dist/antd.css";
-import { Input, Select, AutoComplete } from "antd";
+import { Select } from "antd";
 
 const FilterSales = inject("ClientsStore")(
   observer(props => {
@@ -9,7 +9,7 @@ const FilterSales = inject("ClientsStore")(
 
     useEffect(() => {
       props.ClientsStore.filteredSales("country");
-    }, []);
+    });
 
     const handleSelect = value => {
       props.ClientsStore.filteredSales(value);

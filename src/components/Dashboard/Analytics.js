@@ -17,7 +17,7 @@ const Analytics = inject("ClientsStore")(
 
     useEffect(() => {
       props.ClientsStore.getFirstContactByMonths();
-    }, []);
+    });
 
     const handleChange = values => {
       props.ClientsStore.dateRange(values);

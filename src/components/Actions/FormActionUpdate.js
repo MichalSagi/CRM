@@ -23,7 +23,7 @@ const tailLayout = {
 const FormActionUpdata = inject("ClientsStore")(
   observer(props => {
     const [form] = Form.useForm();
-    const [clients, setClients] = [props.ClientsStore.clients];
+    const [clients, ] = [props.ClientsStore.clients];
     const [ownerDefult, setOwnerDefult] = useState("");
     const [eTypeDefult, setETypeDefult] = useState("");
     const [sold, setSold] = useState(0);
@@ -32,7 +32,7 @@ const FormActionUpdata = inject("ClientsStore")(
       props.ClientsStore.getClientsFromDB();
       props.ClientsStore.getOwnersList();
       props.ClientsStore.getEmailTypes();
-    }, []);
+    });
 
     const onFinish = values => {
       const clientToUpdate = clients.find(c => c.c_name === values.clientName);

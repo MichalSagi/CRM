@@ -26,7 +26,7 @@ const FormActionAdd = inject("ClientsStore")(
     useEffect(() => {
       props.ClientsStore.getOwnersList();
       props.ClientsStore.getCountriesList();
-    }, []);
+    });
 
     const onFinish = values => {
       props.ClientsStore.addClient(values);

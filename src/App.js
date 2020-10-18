@@ -12,7 +12,7 @@ const App = inject("ClientsStore")(
   observer(props => {
     useEffect(() => {
       props.ClientsStore.getClientsFromDB();
-    }, []);
+    });
 
     return (
       <Router>

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "antd/dist/antd.css";
 import { Table, Modal, Form, Input } from "antd";
 import { observer, inject } from "mobx-react";
-import { LoadingOutlined, CheckOutlined } from "@ant-design/icons";
+import { CheckOutlined } from "@ant-design/icons";
 
 const TableTemplate = inject("ClientsStore")(
   observer(props => {

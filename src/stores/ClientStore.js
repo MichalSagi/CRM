@@ -29,7 +29,7 @@ export class ClientStore {
       owner: this.o_name,
       country: this.country
     };
-    const result = await axios.post("http://localhost:8080/client", values);
+    await axios.post("http://localhost:8080/client", values);
   };
 
   @action getClient = async id => {
@@ -37,8 +37,6 @@ export class ClientStore {
     this.client = result.data[0]
   } 
 
-  @action updateClient = e => {};
- 
-}
+ }
 
 export default ClientStore;
