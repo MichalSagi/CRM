@@ -15,13 +15,8 @@ app.use(function(req, res, next) {
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
-
-app.use(express.static(path.join(__dirname, 'public')));
-app.get('*', function(req, res) {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
-});
-
 app.use("/", api);
+
 // app.use('/', express.static(path.join(__dirname, 'dist')))
 
 const PORT = 8080;
