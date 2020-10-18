@@ -9,7 +9,7 @@ const TableTemplate = inject("ClientsStore")(
     const [form] = Form.useForm();
     const clients = props.ClientsStore.clients;
     const [client, setClient] = useState({});
-    const [, setDataIndex] = useState("");
+    const [dataIndex, setDataIndex] = useState("");
     const [visible, setVisible] = useState(false);
 
     useEffect(() => {
