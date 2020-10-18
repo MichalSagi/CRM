@@ -74,10 +74,15 @@
     "webpack-manifest-plugin": "2.2.0",
     "workbox-webpack-plugin": "4.3.1"
   },
+  "engines": {
+    "node": "12.18.x", 
+    "npm": "6.x"
+  },
   "scripts": {
     "start": "node server.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js", 
+    "heroku-postbuild": "ng build --prod"
   },
   "eslintConfig": {
     "extends": "react-app"
