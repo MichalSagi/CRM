@@ -23,11 +23,3 @@ yarn-debug.log*
 yarn-error.log*
 
 
-mysql://
-bb537b1adcb384
-:
-2e0107bd
-@
-eu-cdbr-west-03.cleardb.net
-/heroku_21157b9ed42f375?reconnect=true
-host: crm-01.herokuapp.com
