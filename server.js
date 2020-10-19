@@ -5,7 +5,7 @@ const api = require("./server/routes/api");
 
 const app = express();
 
-const sequelize = new Sequelize( process.env.DATABASE_URL || 'mysql://root:@localhost/crm_db')
+const sequelize = new Sequelize( process.env.CLEARDB_DATABASE_URL || 'mysql://root:@localhost/crm_db')
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
