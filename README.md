@@ -13,6 +13,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ### Screenshots
 
-![clients page](/../C:\Users\Zohar\OneDrive\תמונות\crm\clients.jpg?raw=true "Clients page")
-![action page](/../C:\Users\Zohar\OneDrive\תמונות\crm\action.jpg?raw=true "Actions page")
-![analytics page](/../C:\Users\Zohar\OneDrive\תמונות\crm\analytics.jpg?raw=true "Analytics page")
+![clients page](https://github.com/MichalSagi/CRM/blob/master/clients.jpg?raw=true "Clients page")
+![action page](..\src\assats\crm\actions.JPG "Actions page")
+![analytics page](..\src\assats\crm\analytics.JPG "Analytics page") 
