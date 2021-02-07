@@ -30,7 +30,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 * moment & dateFormat
 
 ### To Do
-1. Adding manager page to edit sealers.
+1. Adding manager page to edit salers.
 2. Sign-in/ register for sealers.
 3. Designing.
 
